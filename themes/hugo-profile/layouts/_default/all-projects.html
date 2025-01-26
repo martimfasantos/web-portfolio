@@ -1,0 +1,68 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+<!-- <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/list.css" media="all"> -->
+{{ if .Site.Params.viewer | default true }}
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/projects.css">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/viewer/viewer.min.css">
+<script src="{{ .Site.Params.staticPath }}/viewer/viewer.min.js"></script>
+
+<!-- fontawesome -->
+<script defer src="{{.Site.Params.staticPath}}/fontawesome-6/all-6.4.2.js"></script>
+{{ end }}
+
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<section id="all-projects" class="py-5">
+    <div class="container">
+        <h2 class="text-center pb-1">{{ .Title }}</h2>
+        <h6 class="text-center mb-5">{{ .Params.description | emojify }}</h6>
+
+        <div class="row justify-content-center px-3 px-md-5">
+            {{ $paginator := .Paginate .Pages 100 }}
+            {{ range .Paginator.Pages }}
+                    <div class="col-lg-4 col-md-6 my-3">
+                        <div class="card my-3 h-100" title="{{ .Title }}">
+                            <div class="card-head">
+                                <img class="card-img-top" src="{{ .Params.image }}" alt="{{ .Title }}">
+                            </div>
+                            <div class="card-body bg-transparent p-3">
+                                <div class="pb-2 bg-transparent">
+                                    {{ range .Params.badges }}
+                                    <span class="badge badge-secondary">{{ . }}</span>
+                                    {{ end }}
+                                </div>
+                                <h5 class="card-title bg-transparent mt-1">{{ .Title }}</h5>
+                                <div class="card-text bg-transparent secondary-font">
+                                    {{ .Description }}
+                                </div>
+                            </div>
+                            {{ if or (.Params.links) (.Params.Featured) }}
+                            <div class="card-footer py-3">
+                                {{ range .Params.links }}
+                                <span class="m-1 mx-2">
+                                    <a href="{{ .url }}" target="_blank">
+                                        <i class="{{ .icon }}"></i>
+                                    </a>
+                                </span>
+                                {{ end }}
+                                {{ if .Params.Featured }}
+                                <span class="float-end">
+                                    <a class="btn btn-sm" href="{{ .Params.Featured.link }}">
+                                        {{ .Featured.name }}
+                                    </a>
+                                </span>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

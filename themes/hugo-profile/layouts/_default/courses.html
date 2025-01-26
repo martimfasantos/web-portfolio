@@ -1,0 +1,129 @@
+{{ define "head" }}
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+<!-- <link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/list.css" media="all"> -->
+{{ if .Site.Params.viewer | default true }}
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/css/courses.css">
+<link rel="stylesheet" href="{{ .Site.Params.staticPath }}/viewer/viewer.min.css">
+<script src="{{ .Site.Params.staticPath }}/viewer/viewer.min.js"></script>
+
+<!-- fontawesome -->
+<script defer src="{{.Site.Params.staticPath}}/fontawesome-6/all-6.4.2.js"></script>
+{{ end }}
+
+{{ end }}
+
+{{ define "title" }}
+{{.Title }} | {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<div class="container pt-5" id="courses">
+    <h2 class="text-center pb-1">{{ .Title }}</h2>
+    <h6 class="text-center mb-5">{{ .Params.description | emojify }}</h6>
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs justify-content-center" id="courseTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="msc-tab" data-bs-toggle="tab" data-bs-target="#msc" type="button" role="tab" aria-controls="msc" aria-selected="false">
+                MSc Degree
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="bsc-tab" data-bs-toggle="tab" data-bs-target="#bsc" type="button" role="tab" aria-controls="bsc" aria-selected="true">
+                BSc Degree
+            </button>
+        </li>
+    </ul>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="courseTabContent">
+
+        <!-- MSc Tab -->
+        <div class="tab-pane fade show active" id="msc" role="tabpanel" aria-labelledby="msc-tab">
+            <div class="row p-5 pt-3">
+                <ul class="list-group list-group-flush">
+                    {{ $mscCourses := where .Site.RegularPages "Type" "msc" }}
+                        {{ range $mscCourses }}
+                            {{ with .Params.mscCourses }}
+                                {{ range $category, $courses := . }}
+
+                                <div class="list-group-section">
+                                    {{ $category | humanize | replaceRE "[0-9]" "" }}
+                                </div>
+
+                                {{ range $courses }}
+                                <li class="list-group-item d-flex">
+                                    <div class="course-info">
+                                        <div class="title">{{ .title }}</div>
+
+                                        {{ if .github }}
+                                        <span class="px-3">
+                                            <a class="github" href="{{ .github.link }}" title=" {{ .github.repo_name }}" target="_blank">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </span>
+                                        {{ end }}
+                                    </div>
+                                    
+                                    <span class="grade rounded-pill" 
+                                    {{ if eq .grade 16 }} style="background-color: #97b74c !important;"{{ end }}
+                                    {{ if eq .grade 17 }} style="background-color: #84ba4b !important;"{{ end }}
+                                    {{ if eq .grade 18 }} style="background-color: #5fb028 !important;"{{ end }}
+                                    {{ if eq .grade 19 }} style="background-color: #228809 !important;"{{ end }}>
+                                    {{ .grade }}
+                                    </span>
+                                </li>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        
+        <!-- BSc Tab -->
+        <div class="tab-pane fade show" id="bsc" role="tabpanel" aria-labelledby="bsc-tab">
+            <div class="row p-5 pt-3">
+                <ul class="list-group list-group-flush">
+                    {{ $bscCourses := where .Site.RegularPages "Type" "bsc" }}
+                        {{ range $bscCourses }}
+                            {{ with .Params.bscCourses }}
+                                {{ range $category, $courses := . }}
+
+                                <div class="list-group-section">
+                                    {{ $category | humanize }}
+                                </div>
+
+                                {{ range $courses }}
+                                <li class="list-group-item d-flex">
+                                    <div class="course-info">
+                                        <div class="title">{{ .title }}</div>
+
+                                        {{ if .github }}
+                                        <span class="px-3">
+                                            <a class="github" href="{{ .github.link }}" title=" {{ .github.repo_name }}" target="_blank">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </span>
+                                        {{ end }}
+                                    </div>
+                                    
+                                    <span class="grade rounded-pill" 
+                                    {{ if eq .grade 16 }} style="background-color: #97b74c !important;"{{ end }}
+                                    {{ if eq .grade 17 }} style="background-color: #84ba4b !important;"{{ end }}
+                                    {{ if eq .grade 18 }} style="background-color: #5fb028 !important;"{{ end }}
+                                    {{ if eq .grade 19 }} style="background-color: #228809 !important;"{{ end }}>
+                                    {{ .grade }}
+                                    </span>
+                                </li>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+{{ end }}
