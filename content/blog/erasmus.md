@@ -7,7 +7,7 @@ tags:
   - Erasmus
   - TUM
   - Study Abroad
-image: /blog/blog-erasmus.png # 5x4
+image: /blog/blog-erasmus.png # image ratio: 3x2
 description: ""
 toc: true
 mathjax: false

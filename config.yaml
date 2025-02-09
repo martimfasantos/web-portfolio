@@ -162,7 +162,7 @@ params:
         - "TensorFlow"
         - "Docker"
         - "SQL"
-        - "Flask"
+        - "FastAPI"
 
   # Experience
   experience:
@@ -215,17 +215,23 @@ params:
         date: "2022 - 2024"
         GPA: "18 out of 20"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+          My specializations were in Artificial Intelligence :robot: and Data Science :bar_chart:. 
+          
+          :scroll: For my MSc thesis, I worked on Generative AI, Deep Learning, and NLP, focusing on the alignment of Language Models
+          with human feedback without reinforcement learning, for machine translation and summarization.
+
+          :point_right_tone1: Check out my blog post on [My MSc Thesis](/blog/thesis/) to learn more.
         erasmus:
           enable: true
           school: "Technische Universität München"
           url: "https://www.tum.de/"
           content: |-
-            I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-            - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-            - Face mask detection using a single convolutional neural network.
+            :earth_africa: I participated in an Erasmus exchange program, where I successfully completed courses in:
+            - Natural Language Processing
+            - Business Analytics and Machine Learning
+            - Query Optimization
+
+            :point_right_tone1: Check out my blog post on [My Erasmus Experience](/blog/erasmus/) to learn more.
         featuredLink:
           enable: true
           name: "My academic record :graduation_cap:"
@@ -238,9 +244,7 @@ params:
         date: "2019 - 2022"
         GPA: "17.43 out of 20"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
+
         featuredLink:
           enable: true
           name: "My academic record :graduation_cap:"

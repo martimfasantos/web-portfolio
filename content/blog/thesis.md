@@ -1,5 +1,5 @@
 ---
-title: "My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning"
+title: "📜 My MSc Thesis: Aligning Language Models with Human Feedback without Reinforcement Learning"
 date: 2024-11-05
 draft: false
 github_link: "https://github.com/martimfasantos/MSc-Thesis"
@@ -9,13 +9,13 @@ tags:
   - Language Models
   - Human Feedback
   - AI Research
-image: /blog/blog-msc-thesis.jpg # 5x4
+image: /blog/blog-msc-thesis.jpg # image ratio: 4x3
 description: "Summary and insights from my MSc Thesis on aligning language models with human feedback without reinforcement learning."
 toc: true
 mathjax: false
 ---
 
-Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on *Aligning Language Models with Human Feedback without Reinforcement Learning*. This research was supervised by **André F.T. Martins**, Head of Research at Unbabel, and **Sweta Agrawal**, a postdoctoral researcher at Instituto de Telecomunicações, in collaboration with Unbabel and SARDINE Lab.
+Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on *Aligning Language Models with Human Feedback without Reinforcement Learning*. This research was supervised by [**André F.T. Martins**](https://andre-martins.github.io/), Head of Research at Unbabel, and [**Sweta Agrawal**](https://sweta20.github.io/), postdoctoral researcher at Instituto de Telecomunicações, in collaboration [Unbabel](https://unbabel.com/) and [SARDINE Lab](https://sardine-lab.github.io/).
 
 ### Thesis Overview
 
@@ -32,5 +32,12 @@ This **work is the first to comprehensively compare various feedback methods app
 ### Conclusion
 
 By evaluating these models and feedback methods, my research sheds light on how RL-free techniques can be a viable alternative to RLHF for improving model alignment with human values, even in smaller-scale models. This is a step toward building more reliable AI systems that can better serve the needs of users in real-world applications.
+
+---
+
+### Repositories
+
+- [**MSc Thesis Repository**](https://github.com/martimfasantos/MSc-Thesis)
+- [**CustomPOs-for-SLMs**](https://github.com/martimfasantos/CustomPOs-for-SLMs) - Custom Policy Optimization methods for Small Language Models.
 
 ---

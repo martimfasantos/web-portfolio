@@ -44,7 +44,7 @@
                                 </div>
                                 {{ end }}
                                 <div class="py-1 education-content">
-                                    {{ .content | markdownify}}
+                                    {{ .content | markdownify | emojify }}
                                 </div>
 
                                 {{ if .erasmus.enable | default false }}
@@ -64,7 +64,7 @@
                                 </div>
 
                                 <div class="py-1 education-content">
-                                    {{ .erasmus.content | markdownify}}
+                                    {{ .erasmus.content | markdownify | emojify }}
                                 </div>
 
                                 {{ end }}

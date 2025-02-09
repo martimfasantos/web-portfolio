@@ -8,7 +8,7 @@ tags:
   - Summer Internship
   - Sky
   - Work Experience
-image: /blog/blog-sky-summer-intership.jpeg # 5x4
+image: /blog/blog-sky-summer-intership.jpeg # image ratio: 4x3
 description: "Summary and insights from my MSc Thesis on aligning language models with human feedback without reinforcement learning."
 toc: true
 mathjax: false
