@@ -112,9 +112,13 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Martim."
-    subtitle: "A ML and GenAI enthusiast."
+    subtitle: "AI & ML enthusiast."
     location: "Lisbon, Portugal"
-    content: "A passionate machine learning engineer and data scientist. I tend to leverage cutting-edge algorithms and data-driven solutions to build models that are insightful, efficient, and deliver results."
+    content: |-
+      A passionate data scientist and AI engineer. 
+      I am passionate about exploring cutting-edge technologies like generative AI, 
+      new frameworks, algorithms and scalable systems to build innovative solutions 
+      that deliver real impact.
     image: "/me/hero-round.png"
     bottomImage:
       enable: true
@@ -158,10 +162,10 @@ params:
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "Python"
+        - "OpenAI"
+        - "LlamaIndex"
         - "pandas"
-        - "TensorFlow"
         - "Docker"
-        - "SQL"
         - "FastAPI"
 
   # Experience
@@ -198,7 +202,7 @@ params:
           url: ""
         content: |-
           Developed, enhanced and deployed a Slack bot to automate manual processes, migrating its codebase from Python to Kotlin 
-          for improved structure and test coverage. This provided a more scalable foundation for future development and integrations."
+          for improved structure and test coverage. This provided a more scalable foundation for future development and AI integrations.
 
       
 
