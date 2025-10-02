@@ -45,17 +45,20 @@ fi
 # Navigate to public directory
 cd public
 
+# Make sure we're on the main branch
+git checkout main 2>/dev/null || true
+
 # Check if there are any changes in the public directory
 if git diff --quiet && git diff --staged --quiet; then
     echo "ℹ️  No changes in the generated site to deploy."
     cd ..
     
-    # Check if there are changes in the main repository
-    if git diff --quiet && git diff --staged --quiet; then
+    # Check if there are changes in the main repository (including submodule updates)
+    if git diff --quiet; then
         echo "ℹ️  No changes in the main repository either."
         exit 0
     else
-        echo "📦 Changes found in main repository, committing..."
+        echo "📦 Changes found in main repository (possibly submodule updates), committing..."
         git add .
         git commit -m "$msg"
         git push origin main
