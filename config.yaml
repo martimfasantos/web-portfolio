@@ -173,7 +173,7 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Data Scientist"
+      - job: "Data Scientist & AI Engineer"
         company: "DareData"
         companyUrl: "https://www.daredata.ai/"
         companyLogo: "/logos/daredata-logo-white.png"
@@ -185,8 +185,25 @@ params:
           name: ""
           url: ""
         content: |-
-          I am currently working as a GenAI Engineer on a project with NOS Portugal to integrate Generative AI, 
-          aiming to enhance service quality and streamline processes to reduce costs.
+          **Data Scientist & AI Engineer at DareData**, a leading AI and Data Science consultancy firm 
+          specializing in delivering AI and data-driven solutions to businesses across various industries.
+
+          ---
+
+          **AI Engineer @ NOS SGPS**, contributing to projects under SCAILE — a cross-functional 
+          Artificial Intelligence program at NOS — driving the development of autonomous AI systems and 
+          intelligent agent-based solutions.
+
+          - Design and implement AI-driven systems leveraging NLP and data-driven approaches.
+          - Build scalable, robust, and well-structured AI solutions deployed in GCP.
+          - Develop and maintain software infrastructure to support complex agents and workflows.
+          - Ensure observability, reliability, and performance of AI systems.
+          - Collaborate with cross-functional teams to deliver innovative AI capabilities that drive real-world impact.
+          - Continuously improve AI systems by researching new methodologies, integrating modern tools, 
+          protocols and frameworks, and scaling solutions to meet business needs.
+
+          **Key Technologies:** _OpenAI · LlamaIndex · Google ADK · LangChain · RAG · MCP · Agent2Agent (A2A) ·
+          OpenTelemetry · GCP · Docker · Azure · MongoDB · PostgreSQL · Streamlit_
 
       - job: "Software Developer"
         company: "Sky Portugal"
