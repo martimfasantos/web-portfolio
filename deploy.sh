@@ -27,7 +27,7 @@ echo "📝 Using commit message: $msg"
 
 # Build the site
 echo "🔨 Building the site..."
-hugo
+hugo --gc --cleanDestinationDir --minify
 
 # Check if public directory exists and is a git repository
 if [ ! -d "public" ]; then
@@ -35,6 +35,9 @@ if [ ! -d "public" ]; then
     echo "Run: git submodule update --init --recursive"
     exit 1
 fi
+
+# Initialize the submodule
+git submodule update --init --recursive
 
 # Navigate to public directory
 cd public

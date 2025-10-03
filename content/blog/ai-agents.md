@@ -1,6 +1,6 @@
 ---
-title: "Understanding Agentic AI: AI Agents, tools, and protocols"
-date: 2025-09-21
+title: "🤖 Understanding AI Agents, tools, and protocols"
+date: 2025-10-02
 draft: false
 github_link: "https://github.com/martimfasantos/ai-agents-frameworks"
 author: "martim"
@@ -108,7 +108,7 @@ The authors argue that the most effective design is **heterogeneous**:
 * A large model handles **planning and orchestration**,
 * A swarm of SLMs executes **narrow, repetitive subtasks** reliably.
 
-![slms_post](/static/blog/slms_post.jpeg)
+![slms_post](/blog/slms_post.jpeg )
 
 This resonates strongly with my MSc research, where I showed that a **1.7B parameter model**, properly fine-tuned, could match the performance of much larger 7B–13B models on machine translation — at a fraction of the cost. This is a finding that continues to influence how I think about building scalable and solid AI systems.
 
@@ -127,7 +127,7 @@ A few practical takeaways from the guide:
 * Use **persistent reminders** for agent behavior (e.g., “plan before acting”).
 * Anchor key instructions at both the **start and end** of prompts if needed.
 
-![prompting_post](/static/blog/prompting_post.png)
+![prompting_post](/blog/prompting_post.png)
 
 Even with advanced models like GPT-4.1, these simple strategies can be the difference between a flaky agent and one that works reliably in production.
 

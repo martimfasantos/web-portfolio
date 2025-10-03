@@ -285,6 +285,20 @@ params:
   projects:
     enable: true
     items:
+      - title: AI Agents Frameworks
+        description: Foundational code repo for learning, exploring, testing, and comparing various state-of-the-art open-source AI Agents Frameworks.
+        image: /projects/ai-agents-frameworks.png # image ratio: 7:5
+        badges:
+          - "GenAI"
+          - "Agents"
+          - "Open-source"
+          - "LLMs"
+          - "OpenAI"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/martimfasantos/ai-agents-frameworks
+
       - title: Diabetes Risk Predictor
         description: End-to-end machine learning pipeline that leverages health and demographic data to predict diabetes risk with high accuracy.
         image: /projects/diabetes-risk-predictor.png # image ratio: 7:5
@@ -318,23 +332,6 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/martimfasantos/CustomPOs-for-SLMs
-            
-      - title: LLMeals - Analytics Cup
-        description: EDA & Predictive model developed for LLMeals - predicts whether a customer will like or dislike a suggested recipe based on their preferences and dietary requirements.
-        image: /projects/analytics-cup.png # image ratio: 7:5
-        # featured:
-        #   name: Demo
-        #   link: 
-        badges:
-          - "Python"
-          - "Jupyter Notebook"
-          - "ML"
-          - "EDA"
-          - "scikit-learn"
-          - "Matplotlib"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/martimfasantos/AnalyticsCup24
 
     allProjects:
       enable: true
