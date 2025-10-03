@@ -27,7 +27,7 @@ echo "📝 Using commit message: $msg"
 
 # Build the site
 echo "🔨 Building the site..."
-hugo --gc --cleanDestinationDir --minify
+hugo
 
 # Check if public directory exists and is a git repository
 if [ ! -d "public" ]; then
@@ -41,9 +41,6 @@ git submodule update --init --recursive
 
 # Navigate to public directory
 cd public
-
-# Make sure we're on the main branch
-git checkout main 2>/dev/null || true
 
 # Check if there are any changes in the public directory
 if git diff --quiet && git diff --staged --quiet; then
@@ -77,5 +74,4 @@ else
     echo "✅ Deployment complete!"
 fi
 
-echo "✅ Deployment complete!"
 echo "🌍 Your site should be live at: https://martimfasantos.github.io"
