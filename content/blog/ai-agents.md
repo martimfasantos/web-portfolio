@@ -11,7 +11,7 @@ tags:
   - Tools
   - A2A
   - MCP
-image: /blog/ai-agents-protocols.png # image ratio: 4x3
+image: /blog/blog-ai-agents.png # image ratio: 4x3
 description: "An overview of Agentic AI – what AI agents are, how they work, and the role of protocols like A2A and MCP in enabling multi-agent collaboration."
 toc: true
 mathjax: false
