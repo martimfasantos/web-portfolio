@@ -15,7 +15,7 @@ toc: true
 mathjax: false
 ---
 
-Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on *Aligning Language Models with Human Feedback without Reinforcement Learning*. This research was supervised by [**André F.T. Martins**](https://andre-martins.github.io/), Head of Research at Unbabel, and [**Sweta Agrawal**](https://sweta20.github.io/), postdoctoral researcher at Instituto de Telecomunicações, in collaboration [Unbabel](https://unbabel.com/) and [SARDINE Lab](https://sardine-lab.github.io/).
+Recently, I successfully defended my MSc Degree in Computer Science and Engineering Thesis on *Aligning Language Models with Human Feedback without Reinforcement Learning*. This research was supervised by [**André F.T. Martins**](https://andre-martins.github.io/), Head of Research at Unbabel, and [**Sweta Agrawal**](https://sweta20.github.io/), Research Scientist at Google, in collaboration [Unbabel](https://unbabel.com/) and [SARDINE Lab](https://sardine-lab.github.io/).
 
 ### Thesis Overview
 

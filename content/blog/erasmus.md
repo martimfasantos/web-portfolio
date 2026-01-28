@@ -13,7 +13,7 @@ toc: true
 mathjax: false
 ---
 
-As one of the top universities in Europe, TUM is highly ranked in global and European university rankings. According to Times Higher Education World University Rankings 2024, **TUM is among the top 30 globally**, both overall and specifically for Computer Science. TUM is also recognized as the best university in Germany, highlighting its excellence in research and teaching.
+As one of the top universities in Europe, TUM is highly ranked in global and European university rankings. According to Times Higher Education World University Rankings 2024, **TUM is the top 30 university globally** and **top 14 in Computer Science, AI and Data Science**. TUM is also recognized as the best university in Germany, highlighting its excellence in research and teaching.
 
 ## My Erasmus Experience @ TUM
 

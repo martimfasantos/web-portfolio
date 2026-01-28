@@ -154,7 +154,7 @@ params:
       Recently, __I successfully defended my MSc Thesis__, _Aligning Language Models with Human Feedback 
       without Reinforcement Learning_. The research delves into Generative AI, Deep Learning, and NLP, and was conducted under the supervision 
       of [André F. T. Martins](https://andre-martins.github.io/), Head of Research at Unbabel, and [Sweta Agrawal](https://sweta20.github.io/), 
-      a postdoctoral researcher at Instituto de Telecomunicações, in collaboration with [Unbabel](https://unbabel.com/) and [SARDINE Lab](https://sardine-lab.github.io/).
+      Research Scientist at Google, in collaboration with [Unbabel](https://unbabel.com/) and [SARDINE Lab](https://sardine-lab.github.io/).
 
       I hold a particular interest in the fields of __Machine Learning__, __Data Science__, and __GenAI__.
     skills:
@@ -190,7 +190,9 @@ params:
 
           ---
 
-          **AI Engineer @ NOS SGPS**, contributing to projects under SCAILE — a cross-functional 
+          **AI Engineer @ NOS SGPS**
+          
+          Contributing to projects under SCAILE — a cross-functional 
           Artificial Intelligence program at NOS — driving the development of autonomous AI systems and 
           intelligent agent-based solutions.
 
@@ -204,6 +206,27 @@ params:
 
           **Key Technologies:** _OpenAI · LlamaIndex · Google ADK · LangChain · RAG · MCP · Agent2Agent (A2A) ·
           OpenTelemetry · GCP · Docker · Azure · MongoDB · PostgreSQL · Streamlit_
+
+          ---
+
+          **AI Engineer & Data Scientist - DREM**
+
+          Worked on a closed project for Direção Regional de Estatística da Madeira (DREM),
+          which cooperates with INE (Instituto Nacional de Estatística) to provide statistical data and analysis specifically 
+          for the Madeira region.
+
+          Developed and deployed a GenAI-powered chatbot to support users in querying and retrieving statistical 
+          and institutional data, ensuring strict compliance with real data and preventing hallucinations due to 
+          the sensitive nature of the information. The system was designed to be robust across multiple thematic areas, 
+          capable of correctly interpreting user intent, identifying the appropriate parameters, and dynamically 
+          generating SQL queries over the statistical database. On the institutional side, a RAG-based approach 
+          using embeddings was implemented to enable accurate and context-aware information retrieval for the all the
+          supported languages.
+
+          We also developed an ETL pipeline to populate their Data Warehouse - which was also used by the chatbot - 
+          and exposed an API to query the DW for the official website, to update statistical information when required, etc..
+
+          **Key Technologies:** _OpenAI · LlamaIndex · RAG · PostgreSQL · SQL · FastAPI · ETL · Azure_
 
       - job: "Software Developer"
         company: "Sky Portugal"
