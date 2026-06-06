@@ -53,9 +53,15 @@ else
     echo "💾 Committing to GitHub Pages repository: $msg"
     git commit -m "$msg"
 
-    # Push to GitHub Pages repository
+    # Push to GitHub Pages repository.
+    # The submodule is in a detached HEAD state (git submodule update checks
+    # out a specific commit, not a branch), so the commit above lands on HEAD
+    # rather than on the local `main` branch. Pushing `main` directly would
+    # push the stale branch ref and silently report "Everything up-to-date".
+    # Push HEAD explicitly to remote main, and fast-forward local main to match.
     echo "🌐 Pushing to GitHub Pages repository..."
-    git push origin main
+    git push origin HEAD:main
+    git branch -f main HEAD
 fi
 
 # Return to main repository
