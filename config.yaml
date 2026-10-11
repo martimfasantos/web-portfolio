@@ -173,69 +173,92 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Data Scientist & AI Engineer"
+      - job: "Tech Lead & AI Engineer"
         company: "DareData"
         companyUrl: "https://www.daredata.ai/"
         companyLogo: "/logos/daredata-logo-white.png"
         date: "Jan 2025 - present"
         info:
-          enable: false
+          enable: true
+          content: "Full-time"
         featuredLink:
           enable: false
           name: ""
           url: ""
         content: |-
-          **Data Scientist & AI Engineer at DareData**, a leading AI and Data Science consultancy firm 
-          specializing in delivering AI and data-driven solutions to businesses across various industries.
+          **Tech Lead**
+
+          Leading the architecture and delivery of production GenAI systems across enterprise use cases, spanning agent-based workflows,
+          LLM orchestration, document intelligence, RAG pipelines, and enterprise integration components.
+
+          - Design multi-stage systems combining OCR, structured data extraction, retrieval-augmented reasoning, and human-in-the-loop
+          validation to transform unstructured documents into structured outputs for proposal analysis, decision support, and contract drafting automation.
+          - Act as **Forward Deployed Engineer (FDE)**, defining end-to-end system architecture, deployment and integration strategies, and
+          adoption paths, while driving integration, rollout, and platform expansion within the client environment.
 
           ---
 
-          **AI Engineer @ NOS SGPS**
-          
-          Contributing to projects under SCAILE — a cross-functional 
-          Artificial Intelligence program at NOS — driving the development of autonomous AI systems and 
-          intelligent agent-based solutions.
+          **GenAI Engineer – GenOS AI Team**
 
-          - Design and implement AI-driven systems leveraging NLP and data-driven approaches.
-          - Build scalable, robust, and well-structured AI solutions deployed in GCP.
-          - Develop and maintain software infrastructure to support complex agents and workflows.
-          - Ensure observability, reliability, and performance of AI systems.
-          - Collaborate with cross-functional teams to deliver innovative AI capabilities that drive real-world impact.
-          - Continuously improve AI systems by researching new methodologies, integrating modern tools, 
-          protocols and frameworks, and scaling solutions to meet business needs.
+          Contributing to the development of GenOS, DareData's enterprise AI operating system for deploying, orchestrating, monitoring,
+          and governing AI applications at scale. Building core AI platform capabilities for AI agents, workflow automation, evaluation and
+          observability systems, knowledge management, enterprise integrations, and multi-LLM orchestration, with a focus on production-grade
+          abstractions for GenAI applications through reusable, composable components.
 
-          **Key Technologies:** _OpenAI · LlamaIndex · Google ADK · LangChain · RAG · MCP · Agent2Agent (A2A) ·
-          OpenTelemetry · GCP · Docker · Azure · MongoDB · PostgreSQL · Streamlit_
+          **AI Engineer & Data Scientist**
 
-          ---
+          Implementing and delivering end-to-end AI, GenAI, and data-driven solutions across telecommunications, energy, public sector,
+          and shared services environments, translating business requirements into production-grade systems.
 
-          **AI Engineer & Data Scientist - DREM**
+          _Selected projects:_
 
-          Worked on a closed project for Direção Regional de Estatística da Madeira (DREM),
-          which cooperates with INE (Instituto Nacional de Estatística) to provide statistical data and analysis specifically 
-          for the Madeira region.
+          - **NOS SGPS** – Contributed to a company-wide GenAI transformation initiative as part of the SCAILE Program, designing and implementing
+          reusable enterprise AI patterns, including AI agents, workflow automation, knowledge access, and internal copilots, in collaboration
+          with cross-functional teams.
+          - **DREM & Statistics Portugal** – Developed a GenAI-powered multi-agent assistant for natural language querying of official statistical
+          data (dynamic SQL generation) and institutional data (multilingual RAG) with strict factual accuracy. Built the supporting ETL pipelines
+          for the Data Warehouse and the APIs powering chatbot and website data access.
+          - **Greenvolt** – Improved and maintained a self-service energy community onboarding platform where users upload invoices to obtain
+          savings estimates, customer qualification, and community matching. Built multi-agent workflows for document extraction, validation,
+          and decisioning, integrated with contract generation and DocuSign-based signing flows.
+          - **Porto de Lisboa** – Automating an end-to-end public procurement workflow through document information extraction, OCR,
+          inconsistency detection, legal validation, and human-in-the-loop review, ensuring maximum consistency, traceability, and
+          compliance across the process. Beyond the technical gains, the system meaningfully improves the day-to-day quality of life of
+          the people involved, freeing them from repetitive, manual tasks and from drowning in paperwork so they can focus on
+          higher-value decisions.
 
-          Developed and deployed a GenAI-powered chatbot to support users in querying and retrieving statistical 
-          and institutional data, ensuring strict compliance with real data and preventing hallucinations due to 
-          the sensitive nature of the information. The system was designed to be robust across multiple thematic areas, 
-          capable of correctly interpreting user intent, identifying the appropriate parameters, and dynamically 
-          generating SQL queries over the statistical database. On the institutional side, a RAG-based approach 
-          using embeddings was implemented to enable accurate and context-aware information retrieval for the all the
-          supported languages.
+          **Key Technologies:** _OpenAI · Anthropic · LlamaIndex · Google ADK · LangChain · RAG · MCP · Agent2Agent (A2A) ·
+          OpenTelemetry · FastAPI · GCP · Docker · Azure · MongoDB · PostgreSQL · Streamlit · etc._
 
-          We also developed an ETL pipeline to populate their Data Warehouse - which was also used by the chatbot - 
-          and exposed an API to query the DW for the official website, to update statistical information when required, etc..
+      - job: "AI Tutor – Software Engineering Expert"
+        company: "SpaceXAI"
+        companyUrl: "https://x.ai/"
+        companyLogo: "/logos/xai-logo-white.svg"
+        date: "May 2026 - present"
+        info:
+          enable: true
+          content: "Contract · Remote"
+        featuredLink:
+          enable: false
+          name: ""
+          url: ""
+        content: |-
+          - Design and evaluate complex software engineering tasks for state-of-the-art Grok coding and reasoning models, assessing capabilities
+          across software architecture, debugging, code generation, testing, refactoring, and system design.
+          - Analyze model performance, robustness, and failure modes in realistic production-like engineering scenarios.
+          - Contribute to benchmark development, evaluation methodologies, and training signals that improve model reliability, coding quality,
+          and alignment.
+          - Provide structured insights and expert feedback in collaboration with the technical teams to improve coding performance and
+          overall product quality.
 
-          **Key Technologies:** _OpenAI · LlamaIndex · RAG · PostgreSQL · SQL · FastAPI · ETL · Azure_
-
-      - job: "Software Developer"
+      - job: "Software Developer Intern"
         company: "Sky Portugal"
         companyUrl: "https://www.sky.com/"
         companyLogo: "/logos/sky-logo.png"
         date: "Jul 2024 - Aug 2024"
         info: 
           enable: true
-          content: "Summer Intership as an Apprentice Backend Developer"
+          content: "Summer Internship as an Apprentice Backend Developer"
         featuredLink:
           enable: false
           name: ""
